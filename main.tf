@@ -1,7 +1,7 @@
 resource "aws_security_group" "this" {
   for_each = toset(var.security_group_names)
   name     = each.value
-  vpc_id   = module.vpc.vpc_id
+  vpc_id   = var.vpc_id
 }
 
 
