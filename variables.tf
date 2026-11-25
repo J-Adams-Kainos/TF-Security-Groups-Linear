@@ -12,3 +12,8 @@ variable "from_port" {
   description = "The FROM port used"
   type        = string
 }
+
+variable "vpc_id" {
+  description = "VPC for security groups"
+  type = string
+}
